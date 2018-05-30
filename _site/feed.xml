@@ -1,2 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-30T10:18:01+05:30</updated><id>http://localhost:4000/</id><title type="html">Vimalraj</title><subtitle>A simple jekyll theme aimed at programmers who like clean interface to write posts and show off some code.
-</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-30T10:36:17+05:30</updated><id>http://localhost:4000/</id><title type="html">Vimalraj</title><subtitle>A simple jekyll theme aimed at programmers who like clean interface to write posts and show off some code.
+</subtitle><entry><title type="html">The Blog And Post Thing</title><link href="http://localhost:4000/2018/05/05/The-Post-thing.html" rel="alternate" type="text/html" title="The Blog And Post Thing" /><published>2018-05-05T00:00:00+05:30</published><updated>2018-05-05T00:00:00+05:30</updated><id>http://localhost:4000/2018/05/05/The-Post-thing</id><content type="html" xml:base="http://localhost:4000/2018/05/05/The-Post-thing.html">&lt;p&gt;Hi there I am vimal..! Welcome to my blog here you can find my experiment things like code,opensource,thoughts,curiosity and talks and openion&lt;/p&gt;
+
+&lt;p&gt;And this experiment which is started on jekyll.This whole site could be made upon this thing called jekyll.&lt;/p&gt;
+
+&lt;p&gt;1.What is jekyll?
+2.How to blog things using jekyll?
+3.Is it worth using this?
+4.what is github pages?&lt;/p&gt;
+
+&lt;p&gt;Yes you can find lot of things through the future following post!  [:)]&lt;/p&gt;
+
+&lt;p&gt;Happy Coding !!!&lt;/p&gt;</content><author><name></name></author><summary type="html">Hi there I am vimal..! Welcome to my blog here you can find my experiment things like code,opensource,thoughts,curiosity and talks and openion</summary></entry></feed>
