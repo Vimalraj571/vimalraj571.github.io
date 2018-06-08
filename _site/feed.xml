@@ -1,12 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-30T10:36:17+05:30</updated><id>http://localhost:4000/</id><title type="html">Vimalraj</title><subtitle>A simple jekyll theme aimed at programmers who like clean interface to write posts and show off some code.
-</subtitle><entry><title type="html">The Blog And Post Thing</title><link href="http://localhost:4000/2018/05/05/The-Post-thing.html" rel="alternate" type="text/html" title="The Blog And Post Thing" /><published>2018-05-05T00:00:00+05:30</published><updated>2018-05-05T00:00:00+05:30</updated><id>http://localhost:4000/2018/05/05/The-Post-thing</id><content type="html" xml:base="http://localhost:4000/2018/05/05/The-Post-thing.html">&lt;p&gt;Hi there I am vimal..! Welcome to my blog here you can find my experiment things like code,opensource,thoughts,curiosity and talks and openion&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-08T21:15:33+05:30</updated><id>http://localhost:4000/</id><title type="html">Vimalraj</title><subtitle>A simple jekyll theme aimed at programmers who like clean interface to write posts and show off some code.
+</subtitle><entry><title type="html">How Do i Learn to request</title><link href="http://localhost:4000/How-Do-i-Learn-to-request.html" rel="alternate" type="text/html" title="How Do i Learn to request" /><published>2018-05-06T00:00:00+05:30</published><updated>2018-05-06T00:00:00+05:30</updated><id>http://localhost:4000/How-do-learn-to-request</id><content type="html" xml:base="http://localhost:4000/How-Do-i-Learn-to-request.html">&lt;p&gt;Hi Today i came across the situation to make the query string on server (May likely to the API endpoint)
+And get the response show it on terminal&lt;/p&gt;
+
+&lt;h2 id=&quot;query-string&quot;&gt;Query String&lt;/h2&gt;
+
+&lt;p&gt;Query String is the process like give the string in url and get the response&lt;/p&gt;
+
+&lt;p&gt;Like google simple query string using the url&lt;/p&gt;
+
+&lt;p&gt;It is the very basic query string using Google&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://www.google.com/search?q=python+things&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;I done that by using python 3.5! Using the library module called urllib.
+Using the urlretrieve function you can make the Query string to the server
+But the major disappoint is you can’t get the response directly 
+the difficulty is get the response as the txt file
+open using the file.open() kind a things&lt;/p&gt;
+
+&lt;p&gt;So using the urlretrieve library function the we can make request easily but 
+the response is difficult to get and see in terminal  (in my case)&lt;/p&gt;
+
+&lt;p&gt;Be i didn’t used any of the magic things so i tried the library function urlretrieve how i turned down that&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.request&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlretrieve&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.parse&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlencode&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'q'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'This simple sentence contain shots of words'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;qs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlencode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;	
+&lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlretrieve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.wdylike.appspot.com/?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#Or pass second argument as txt.txt get in same dir&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;qs = urlencode(d) gives the query string as like&lt;/p&gt;
+
+&lt;p&gt;http://www.wdylike.appspot.com/?q=This+simple+sentence+contain+shots+of+words (Pretty cool right)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;RESPONSE at : (‘/tmp/tmpl56ujjzh’, &amp;lt;http.client.HTTPMessage object at 0x7fea196748d0&amp;gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this case again i have to read the tmpl56ujjzh.txt file using open.file() and get the response&lt;/p&gt;
+
+&lt;h2 id=&quot;the-magic&quot;&gt;The Magic&lt;/h2&gt;
+
+&lt;p&gt;The Magic thing is called request&lt;/p&gt;
+
+&lt;p&gt;which is available in PyPy you can use install it using the&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pip install request&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When you have anaconda it is preinstalled&lt;/p&gt;
+
+&lt;p&gt;Now i make the request and response with the hesitation Now the code will be like&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;requests&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;dic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'q'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file_content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'http://www.wdylike.appspot.com'&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;REPONSE as : false&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I can simply put r.text or r.json() to show the response&lt;/p&gt;
+
+&lt;p&gt;the simple dic will converted as the Query string like this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://www.wdylike.appspot.com/?q=This+simple+sentence+contain+shots+of+words&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;using the request package&lt;/p&gt;
+
+&lt;p&gt;Thanks to the Kennith Ritz&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;PS: Creater of request&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;1.Things i learned make sure have the pypy packages to easy the work&lt;/li&gt;
+  &lt;li&gt;2.How to do code on Google Style guide&lt;/li&gt;
+  &lt;li&gt;3.As well as as how to request&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy coding !! :)&lt;/p&gt;</content><author><name></name></author><category term="python" /><category term="request" /><category term="query string" /><summary type="html">Hi Today i came across the situation to make the query string on server (May likely to the API endpoint) And get the response show it on terminal</summary></entry><entry><title type="html">The Blog And Post Thing</title><link href="http://localhost:4000/2018/05/05/The-Post-thing.html" rel="alternate" type="text/html" title="The Blog And Post Thing" /><published>2018-05-05T00:00:00+05:30</published><updated>2018-05-05T00:00:00+05:30</updated><id>http://localhost:4000/2018/05/05/The-Post-thing</id><content type="html" xml:base="http://localhost:4000/2018/05/05/The-Post-thing.html">&lt;p&gt;Hi there I am vimal..! Welcome to my blog here you can find my experiment things like code,opensource,thoughts,curiosity and talks and openion&lt;/p&gt;
 
 &lt;p&gt;And this experiment which is started on jekyll.This whole site could be made upon this thing called jekyll.&lt;/p&gt;
 
-&lt;p&gt;1.What is jekyll?
-2.How to blog things using jekyll?
-3.Is it worth using this?
-4.what is github pages?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;1.What is jekyll?&lt;/li&gt;
+  &lt;li&gt;2.How to blog things using jekyll?&lt;/li&gt;
+  &lt;li&gt;3.Is it worth using this?&lt;/li&gt;
+  &lt;li&gt;4.what is github pages?&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Yes you can find lot of things through the future following post!  [:)]&lt;/p&gt;
 
