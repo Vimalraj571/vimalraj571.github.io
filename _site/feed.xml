@@ -1,5 +1,146 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-08T21:21:14+05:30</updated><id>http://localhost:4000/</id><title type="html">Vimalraj</title><subtitle>A simple jekyll theme aimed at programmers who like clean interface to write posts and show off some code.
-</subtitle><entry><title type="html">How Do i Learn to request</title><link href="http://localhost:4000/How-Do-i-Learn-to-request.html" rel="alternate" type="text/html" title="How Do i Learn to request" /><published>2018-05-06T00:00:00+05:30</published><updated>2018-05-06T00:00:00+05:30</updated><id>http://localhost:4000/How-do-learn-to-request</id><content type="html" xml:base="http://localhost:4000/How-Do-i-Learn-to-request.html">&lt;p&gt;Hi Today i came across the situation to make the query string on server (May likely to the API endpoint)
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-06T14:06:30+05:30</updated><id>http://localhost:4000/</id><title type="html">Vimalraj</title><subtitle>A simple jekyll theme aimed at programmers who like clean interface to write posts and show off some code.
+</subtitle><entry><title type="html">RegExp Parsing</title><link href="http://localhost:4000/RegExp-Parsing.html" rel="alternate" type="text/html" title="RegExp Parsing" /><published>2018-05-20T00:00:00+05:30</published><updated>2018-05-20T00:00:00+05:30</updated><id>http://localhost:4000/RegExp-Parsing</id><content type="html" xml:base="http://localhost:4000/RegExp-Parsing.html">&lt;p&gt;Hello There !!
+Simple Regular Expression parsing in python. It’s kinda handy when you handling and manipulating the strings&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-regexp-aka-regular-expressions&quot;&gt;What is RegExp AKA Regular Expressions:&lt;/h2&gt;
+
+&lt;p&gt;The regular expressions are the way of extracting the pattern from the given string it’s like a confusing at first as a beginner and after getting into it it’s kinda handy and cool (A time saver)&lt;/p&gt;
+
+&lt;p&gt;This is kinda weird at first….!!!&lt;/p&gt;
+
+&lt;p&gt;Using the traditional method in python it didn’t give that much of efficiency first loop through all words in a string and find a specific character and creating the new list comes under the cost of space,time…&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-work-with-regexp&quot;&gt;How to work with RegExp:&lt;/h2&gt;
+
+&lt;p&gt;First, find the pattern you want to remove some set of string&lt;/p&gt;
+
+&lt;p&gt;(The RegExp rule is defined upon yourself based on the use cases)&lt;/p&gt;
+
+&lt;p&gt;In my case, I want to parse the string without numerical as well as the special character no special character like&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0123456789~!@#$%&amp;amp;*()_+`-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It should only contain alphas in the string&lt;/p&gt;
+
+&lt;h2 id=&quot;simple-regexp-rules&quot;&gt;Simple RegExp rules:&lt;/h2&gt;
+
+&lt;p&gt;Follow this table will give the simple basic rule to work with regexp&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Token&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Definition&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Start of strings&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;End of strings&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any single Character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\s&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any whitespace Character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\S&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any non-whitespace character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\d&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any digit 0 to 9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\D&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any non-digit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\w&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any word character (letter, number &amp;amp; underscore)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\W&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any non-word Character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[abc]&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any single character a, b or c&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[^abc]&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Any character other than a, b or c&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[a-z]&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Character between(including) a to z&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;This table contains very basic to extract the regexp&lt;/p&gt;
+
+&lt;p&gt;Exp.
+I want to parse just&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  hello@example.com ==&amp;gt; helloexamplecom
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The simple expression is&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;**r'\W'**
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;it removes all the special characters
+This is how we write and use regexp parsing&lt;/p&gt;
+
+&lt;p&gt;Ex:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+02 - I Bet My Life (Bastille Remix).mp3 ==&amp;gt; I Bet My Life (Bastille Remix).mp3 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The grammar how I wrote to parse the following first I remove&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;02&lt;/strong&gt; then ,** (space)** ,&lt;strong&gt;-&lt;/strong&gt;,** (space)** == ‘(02 - )’&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;r’\d+\s+\D\s’&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;r = Escape character&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;\d+ = digit and add one space after digit&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;\s+ = white space and add one space after white space&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;\D = Non digit&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;\s = white space&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is simple python program to parse the files name based on my use case&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;cur_dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getcwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;dir_files&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listdir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cur_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir_files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;    
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'\d+\s+\D\s'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+    &lt;span class=&quot;c&quot;&gt;#RegExp For Parsing '01 - All Eyes.mp3' -&amp;gt; 'All Eyes.mp3'    &lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here the simple parsing statement which converts the string to contain only
+alphabets&lt;/p&gt;
+
+&lt;p&gt;This how you can use the simple parsing using the RegExp…..!&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello There !! Simple Regular Expression parsing in python. It’s kinda handy when you handling and manipulating the strings</summary></entry><entry><title type="html">How Do i Learn to request</title><link href="http://localhost:4000/How-Do-i-Learn-to-request.html" rel="alternate" type="text/html" title="How Do i Learn to request" /><published>2018-05-06T00:00:00+05:30</published><updated>2018-05-06T00:00:00+05:30</updated><id>http://localhost:4000/How-do-learn-to-request</id><content type="html" xml:base="http://localhost:4000/How-Do-i-Learn-to-request.html">&lt;p&gt;Hi Today i came across the situation to make the query string on server (May likely to the API endpoint)
 And get the response show it on terminal&lt;/p&gt;
 
 &lt;h2 id=&quot;query-string&quot;&gt;Query String&lt;/h2&gt;
